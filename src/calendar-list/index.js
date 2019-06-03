@@ -283,6 +283,9 @@ class CalendarList extends Component {
           data={this.state.rows}
           //snapToAlignment='start'
           //snapToInterval={this.calendarHeight}
+          viewabilityConfig={{
+            itemVisiblePercentThreshold: 50
+          }}
           removeClippedSubviews={this.props.removeClippedSubviews}
           pageSize={1} // ListView deprecated
           horizontal={this.props.horizontal}
